@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ancAdminLogin" prefHeight="710.0" prefWidth="1456.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.electricalshop.controller.AdminLoginController">
+   <children>
+      <AnchorPane prefHeight="710.0" prefWidth="402.0" style="-fx-background-color: green;">
+         <children>
+            <ImageView fitHeight="62.0" fitWidth="67.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/Main%20Logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="86.0" layoutY="23.0" prefHeight="31.0" prefWidth="296.0" text="Electrical shop Management System" textFill="#fff700">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="138.0" layoutY="109.0" onAction="#btnItemOnAction" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: white;" text="ITEM">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#8d7c7c" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="138.0" layoutY="244.0" onAction="#btnSupplierOnAction" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: white;" text="Supplier">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#8d7c7c" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="logOut" layoutX="138.0" layoutY="630.0" onAction="#btnLogoutOnAction" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: blue;" text="LOGOUT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#8d7c7c" />
+               </effect>
+            </JFXButton>
+            <JFXButton layoutX="138.0" layoutY="388.0" onAction="#btnReportsOnAction" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: white;" text="Report">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#8d7c7c" />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="122.0" fitWidth="140.0" layoutX="826.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/item%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="630.0" layoutY="273.0" prefHeight="22.0" prefWidth="118.0" text="Item Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtItemId" layoutX="815.0" layoutY="276.0" prefHeight="25.0" prefWidth="269.0" />
+      <Label layoutX="630.0" layoutY="455.0" prefHeight="30.0" prefWidth="135.0" text="Qty On Hand">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="333.0" prefHeight="22.0" prefWidth="118.0" text="Description">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="393.0" prefHeight="22.0" prefWidth="118.0" text="Unit Price">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDescription" layoutX="815.0" layoutY="336.0" prefHeight="25.0" prefWidth="269.0" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="815.0" layoutY="396.0" prefHeight="25.0" prefWidth="269.0" />
+      <JFXTextField fx:id="txtQtyOnHand" layoutX="815.0" layoutY="457.0" prefHeight="25.0" prefWidth="269.0" />
+      <JFXButton buttonType="RAISED" cache="true" layoutX="985.0" layoutY="583.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="166.0" ripplerFill="WHITE" style="-fx-background-color: #1a9d1a;" text="Update" textFill="WHITE" textOverrun="CENTER_WORD_ELLIPSIS">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets bottom="10.0" top="10.0" />
+         </opaqueInsets>
+      </JFXButton>
+   </children>
+</AnchorPane>

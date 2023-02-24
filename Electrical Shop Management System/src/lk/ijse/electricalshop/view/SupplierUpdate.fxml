@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancSupplierUpdate" prefHeight="600.0" prefWidth="764.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.electricalshop.controller.SupplierUpdateController">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="122.0" layoutX="326.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/suppliers%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="249.0" prefHeight="17.0" prefWidth="105.0" text="Supplier Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="424.0" prefHeight="17.0" prefWidth="105.0" text="Item Id">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="289.0" prefHeight="17.0" prefWidth="105.0" text="Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="373.0" prefHeight="30.0" prefWidth="121.0" text="Contact num">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="328.0" prefHeight="17.0" prefWidth="105.0" text="Address">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSupId" layoutX="356.0" layoutY="252.0" prefHeight="25.0" prefWidth="281.0" />
+      <JFXTextField fx:id="txtSupName" layoutX="356.0" layoutY="292.0" prefHeight="25.0" prefWidth="281.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="356.0" layoutY="331.0" prefHeight="25.0" prefWidth="281.0" />
+      <JFXTextField fx:id="txtContactNum" layoutX="356.0" layoutY="376.0" prefHeight="25.0" prefWidth="281.0" />
+      <JFXTextField fx:id="txtItemId" layoutX="356.0" layoutY="427.0" prefHeight="25.0" prefWidth="281.0" />
+      <JFXButton alignment="CENTER" layoutX="382.0" layoutY="511.0" onAction="#btnUpdate" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #1a9d1a;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER" layoutX="33.0" layoutY="46.0" onAction="#btnBack" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: #210c54;" text="&lt;- Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

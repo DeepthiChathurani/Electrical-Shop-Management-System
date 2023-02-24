@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="710.0" prefWidth="967" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.electricalshop.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="384.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/customer1%20logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="257.0" prefHeight="30.0" prefWidth="143.0" text="Customrt Id   :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerId" layoutX="349.0" layoutY="255.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+      <Button layoutX="269.0" layoutY="598.0" mnemonicParsing="false" onAction="#btnCustAdd" prefHeight="56.0" prefWidth="231.0" style="-fx-background-color: #2c80aa;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </Button>
+      <Label layoutX="167.0" layoutY="307.0" prefHeight="30.0" prefWidth="143.0" text="Name             :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="355.0" prefHeight="30.0" prefWidth="143.0" text="Address         :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="406.0" prefHeight="30.0" prefWidth="143.0" text="Email             :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="451.0" prefHeight="30.0" prefWidth="143.0" text="Contact No   :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtcustName" layoutX="349.0" layoutY="305.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtcustAddress" layoutX="349.0" layoutY="353.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtcustEmail" layoutX="349.0" layoutY="404.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtcustContactNo" layoutX="349.0" layoutY="449.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+      <Button layoutX="680.0" layoutY="449.0" mnemonicParsing="false" onAction="#btnCustUpdate" prefHeight="56.0" prefWidth="231.0" style="-fx-background-color: #1a9d1a;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </Button>
+      <Button layoutX="680.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnCustDelete" prefHeight="56.0" prefWidth="231.0" style="-fx-background-color: #971919;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </Button>
+      <Button layoutX="680.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnCustSearch" prefHeight="56.0" prefWidth="231.0" text="Search" textFill="#0a0a0a">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </Button>
+      <Button layoutX="23.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnCustBack" prefHeight="56.0" prefWidth="175.0" style="-fx-background-color: #210C54;" text="&lt;- Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </Button>
+      <Label layoutX="167.0" layoutY="505.0" prefHeight="30.0" prefWidth="143.0" text="Employee Id :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmployeeId" layoutX="349.0" layoutY="503.0" prefHeight="34.0" prefWidth="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow color="#b29b9b" />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

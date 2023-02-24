@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancMainForm" prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.electricalshop.controller.MainFormController">
+   <children>
+      <AnchorPane prefHeight="710.0" prefWidth="776.0" style="-fx-background-color: #0f8e22;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <children>
+            <Label layoutX="146.0" layoutY="385.0" prefHeight="69.0" prefWidth="419.0" text="ELECTRICAL SHOP">
+               <font>
+                  <Font name="System Bold" size="47.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#a89494" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="200.0" fitWidth="184.0" layoutX="266.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/Main%20Logo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Label layoutX="189.0" layoutY="466.0" prefHeight="66.0" prefWidth="336.0" text="MANAGEMENT">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#908383" />
+               </effect>
+            </Label>
+            <Label layoutX="256.0" layoutY="548.0" prefHeight="66.0" prefWidth="182.0" text="SYSTEM">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow color="#977f7f" />
+               </effect>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtUsername" layoutX="949.0" layoutY="182.0" prefHeight="37.0" prefWidth="349.0" promptText="Username">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <ImageView fitHeight="66.0" fitWidth="74.0" layoutX="844.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/user%20name%20logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="73.0" fitWidth="66.0" layoutX="845.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logo/password%20logo.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtPassword" layoutX="949.0" layoutY="306.0" prefHeight="37.0" prefWidth="349.0" promptText="Password">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <Button layoutX="842.0" layoutY="399.0" mnemonicParsing="false" onAction="#btnLogin" prefHeight="51.0" prefWidth="452.0" style="-fx-background-color: #210C54;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Separator layoutX="843.0" layoutY="534.0" prefHeight="3.0" prefWidth="213.0" />
+      <Separator layoutX="1094.0" layoutY="534.0" prefWidth="200.0" />
+      <Button layoutX="884.0" layoutY="578.0" mnemonicParsing="false" onAction="#btnRegistration" prefHeight="31.0" prefWidth="393.0" style="-fx-background-color: white;" text="Click here for Registration">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="1068.0" layoutY="525.0" text="OR">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLoginMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="879.0" layoutY="477.0" prefHeight="31.0" prefWidth="400.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+</AnchorPane>

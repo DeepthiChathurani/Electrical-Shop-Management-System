@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="ancReport" prefHeight="710.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.electricalshop.controller.ReportController">
+   <children>
+      <JFXButton layoutX="782.0" layoutY="184.0" onAction="#btnItemDetails" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: brown;" text="Item Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="58.0" layoutY="95.0" prefHeight="582.0" prefWidth="455.0" style="-fx-background-color: #1a9d1a;">
+         <children>
+            <ImageView fitHeight="93.0" fitWidth="109.0" layoutX="190.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo/Main%20Logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="118.0" layoutY="215.0" prefHeight="37.0" prefWidth="220.0" text="Electrical Shop">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="103.0" layoutY="308.0" prefHeight="37.0" prefWidth="250.0" text="Management System">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="32.0" layoutY="22.0" onAction="#btnBack" prefHeight="44.0" prefWidth="174.0" style="-fx-background-color: #210c54;" text="&lt;- Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="782.0" layoutY="344.0" onAction="#btnOrdersDetails" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: brown;" text="Orders Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="782.0" layoutY="487.0" onAction="#btnSupplierDetails" prefHeight="44.0" prefWidth="301.0" style="-fx-background-color: brown;" text="Supplier Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
